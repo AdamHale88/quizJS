@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QuizJS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <section
+        class="hero is-fullheight is-flex is-justify-content-center is-align-content-center is-flex-direction-column">
+        <div
+            class="is-flex is-flex-wrap-wrap is-justify-content-center is-align-content-center is-flex-direction-column">
+            <div class="columns is-flex is-flex-wrap-wrap is-justify-content-center is-align-content-flex-end">
+                <div class="column is-centered m-5 highScores is-hidden">
+                    <i class="fas fa-crown"></i>
+                    <h1>HIGH SCORES</h1></i>
+                    <table class="table top">
+                        <thead>
+                            <tr>
+                                <th>Player</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tableInsert is-uppercase">
+                            <tr>
+                                <th>AHO</th>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="column is-mobile">
+                    <div class="container column">
+                        <div
+                            class="notification is-flex is-flex-direction-column is-flex-wrap-wrap is-justify-content-center is-align-content-center">
+                            <div
+                                class="card-title is-flex is-justify-content-center is-align-content-right is-uppercase m-2 p-2">
+                                <h1 id="title"></h1>
+                                <div class="logo is-flex is-justify-content-center is-align-content-center">
+                                    <img alt="quiz js" src="images/1.png" />
+                                </div>
+
+                            </div>
+                            <div class="card-content is-flex-direction-column is-flex is-flex-wrap-wrap is-justify-content-center is-align-content-center"
+                                id="rules">
+                                <h1 class='is-underlined '>RULES</h1>
+                                <br>
+                                <ol>
+                                    <li>You Have 2 Minutes To answer all 10 javascript questions.</li>
+                                    <br>
+                                    <li>Wrong answers will count as a 15 second penalty.</li>
+                                    <br>
+                                    <li>Each Correct answer is 100 points </li>
+                                    <br>
+                                    <li>You will be asked upon completion to enter your intials and save your score.
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div class="control has-icons-left has-icons-right is-hidden" id="initials">
+                                <input class="input is-medium is-uppercase" maxlength="4" type="text"
+                                    placeholder="Initals">
+                                <span class="icon is-medium is-right">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                            </div>
+                            <div class="card is-flex is-flex-wrap-wrap is-flex-direction-column is-justify-content-center is-align-content-center bottom card-content is-hidden"
+                                id="choicebuttons"">
+                                    <button class=" button is-outlined m-2" id="btn1"></button>
+                                <button class="button is-outlined m-2" id="btn2"></button>
+                                <button class="button is-outlined m-2" id="btn3"></button>
+                                <button class="button is-outlined m-2" id="btn4"></button>
+                            </div>
+                            <br>
+                            <footer
+                                class="card-footer is-flex-direction-column is-flex is-flex-wrap-wrap is-justify-content-center is-align-content-center">
+                                <button class="button submit is-outlined is-hidden" id="submit">Submit</button>
+                                <button class="button is-outlined" id="start">Start Quiz</button>
+                                <div class="is-flex is-justify-content-left is-align-content-left m-3 p-4 is-hidden"
+                                    id="time-box">
+                                    <h1 id="timeLeft">
+                                        Time Left: 2:00
+                                    </h1>
+                                </div>
+                                <div class="card-title is-flex is-justify-content-left is-align-content-left m-2 p-4 is-uppercase is-hidden"
+                                    id="score-box">
+                                    <h1 id="score"></h1>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>

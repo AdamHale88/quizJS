@@ -1,0 +1,83 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  color:black;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: rgb(92, 155, 192);
+}
+
+.hero {
+  box-sizing: content-box;
+  margin: 0;
+  position: center;
+}
+
+h1 {
+  font-size: x-large;
+  color:black;
+}
+
+.columns {
+  box-sizing: content-box;
+  margin-top: 300px;
+  width: 500px;
+  height: 350px;
+}
+
+.card { 
+  box-sizing: content-box;
+  margin: 0;
+  background-color: rgb(142, 183, 221);
+  box-shadow: 2px 3px 5px rgb(58, 57, 57);
+}
+
+.top{
+  margin: 0;
+  order:1;
+}
+
+#time-box {
+  border: rgb(6, 29, 54);;
+  border-style: solid;
+  box-shadow: 0 3px 5px rgb(25, 23, 41);
+}
+
+
+.bottom{
+  margin: 0;
+  color: black;
+  order:0;
+}
+
+table {
+  border: rgb(6, 29, 54);;
+  border-style: solid;
+  box-shadow: 0 3px 5px rgb(25, 23, 41);
+}
+
+
+.button {
+  box-sizing: border-box;
+  height: 40px;
+  width: 400px;
+  padding: 10px;
+  margin: 5px;
+  font-size: large;
+  border: black;
+  border-style: solid;
+}
+
+.container { 
+  margin: 0;
+  padding: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 12px;
+  border-color: rgb(4, 7, 49);
+  box-shadow: 0 3px 5px rgb(25, 23, 41);
+}
+
